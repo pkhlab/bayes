@@ -1,0 +1,19 @@
+# yaml file that contains specific variables for pymc
+# use + and - after "e" for scientific notations, e.g. 1.0e+3, 2.0e+1
+y0sVals: {'cyto': 1.0, 'ER1': 1.0e1, 'ER2': 1.0e-1} # initial ODE state values
+hyper_mu: {'kSERCA': 2.0, 'kRyr': 2.0e-2}
+hyper_sigma:              {'kSERCA': 1.0, 'kRyr': 5.0e-1}
+frameRate: 5.0e-2                                       # microscopy data acquisition rate
+nChannels: 2                                            # number of fluorescent channels
+normalize: True                                         # data normalization by min and max
+smooth: False                                           # data smoothing using SMA
+smoothWindows:                                          # smoothing windows; passed as a dictionary for individual channels
+K: 3                                                    # number of components in the mixture model
+nChains: 5                                              # number of chains in MC sampling
+sampler:                                                # NUTS by default; else could choose from PyMC supported samplers
+advi: True                                              # use ADVI to initialize sampling
+sampleStep: 1000                                        # number of sampling steps
+tuneStep: 1000                                          # number of tuning steps
+adviStep: 500000                                        # number of ADVI steps
+
+

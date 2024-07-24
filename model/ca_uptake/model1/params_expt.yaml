@@ -1,0 +1,19 @@
+# yaml file that contains specific variables for pymc
+# use + and - after "e" for scientific notations, e.g. 1.0e+3, 2.0e+1
+y0sVals: {'ATP': 1.0e-2,'op': 1.0e-1,'caIn': 1.0e-1} # initial ODE state values
+hyper_mu: {'caEx': 1.5e+0, 'Kdatp': 5.0e-1, 'kdecay': 4.0e-2, 'kclose': 5.0e-1, 'kflux': 5.0e-2, 'kleak': 3.0e-1}
+hyper_sigma:              {'Kdatp': 1.0e-1, 'kdecay': 1.0e-1, 'kclose': 1.0e-1, 'kflux': 1.0e-1, 'kleak': 1.0e-1}
+frameRate: 0.6            # microscopy data acquisition rate
+nChannels: 1              # number of fluorescent channels
+normalize: True           # data normalization by min and max
+smooth: False             # data smoothing using SMA
+smoothWindows:            # smoothing windows; passed as a dictionary for individual channels; {'channel1':1,'channel2':2}
+K: 3                      # number of components in the mixture model
+nChains: 5                # number of chains in MC sampling
+sampler:                  # NUTS by default; else could choose from PyMC supported samplers
+advi: True                # use ADVI to initialize sampling
+sampleStep: 1000          # number of sampling steps
+tuneStep: 1000            # number of tuning steps
+adviStep: 500000          # number of ADVI steps
+
+
