@@ -24,7 +24,42 @@ python run_pymc.py --data expt_data.csv --model model1.py --param params_expt.ya
 **params_expt.yaml:** a YAML file to define processing options of the input data, priors of the model parameters, and settings of the MCMC sampling of the inference
 
 
-## To cite:
+## Project Structure
+
+```.
+├── analysis_notebooks
+│   ├── ca_uptake
+│   └── cyto_ER_shuttling
+├── code
+│   ├── __pycache__
+│   ├── run_pymc.py
+│   └── sma.py
+├── data
+│   ├── inference_data
+│   ├── inference_data.tar.gz
+│   └── observed_data
+├── LICENSE
+├── model
+│   ├── ca_uptake
+│   └── cyto_ER_shuttling
+├── README.md
+└── structure.txt
+```
+
+
+
+** analysis_scripts:
+
+** code
+
+** data/observed_data:
+
+** model:
+
+
+
+
+### To cite:
 Fang, X., Varughese, P., Osorio-Valencia, S., Zima, A.V., P.M. Kekenes-Huskey (2025). A Bayesian framework for systems model refinement and selection of calcium signaling
 
 ### Funding
