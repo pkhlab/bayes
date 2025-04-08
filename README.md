@@ -31,19 +31,15 @@ python run_pymc.py --data expt_data.csv --model model1.py --param params_expt.ya
 │   ├── ca_uptake
 │   └── cyto_ER_shuttling
 ├── code
-│   ├── __pycache__
-│   ├── run_pymc.py
+│   ├── run_pymc.py: pymc script
 │   └── sma.py
 ├── data
-│   ├── inference_data
-│   ├── inference_data.tar.gz
 │   └── observed_data
 ├── LICENSE
 ├── model
 │   ├── ca_uptake
 │   └── cyto_ER_shuttling
 ├── README.md
-└── structure.txt
 ```
 
 
