@@ -107,7 +107,8 @@ python run_pymc.py --data expt_data.csv --model model1.py --param params_expt.ya
 ```
 
 ### Inference data
-Due to the size limit, the PyMC inference data are available at Zenodo with DOI: [10.5281/zenodo.15177884](https://doi.org/10.5281/zenodo.15177884)
+Due to the size limit, the PyMC inference data are available at Zenodo with DOI: [10.5281/zenodo.15177884](https://doi.org/10.5281/zenodo.15177884).
+We provide the inference data in two formats: 1) *.nc, default PyMC data format for PyMC built-in functions, and 2) *.csv, for more flexible replotting using external libraries such as matplotlib and seaborn
 
 ### To cite
 Fang, X., Varughese, P., Osorio-Valencia, S., Zima, A.V., P.M. Kekenes-Huskey (2025). A Bayesian framework for systems model refinement and selection of calcium signaling
